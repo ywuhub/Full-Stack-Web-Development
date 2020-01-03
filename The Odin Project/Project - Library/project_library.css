@@ -1,0 +1,26 @@
+h1 {
+    color: rgb(4, 134, 4);
+}
+
+hr {
+    width: 75%;
+    border-top: 5px dotted rgb(255, 46, 46);
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16;
+}
+
+.button1 {
+    background-color: #008CBA;
+    color: white;
+}

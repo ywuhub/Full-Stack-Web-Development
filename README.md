@@ -5,6 +5,8 @@ This repository stores all full stack web development projects and related progr
 The following is the types of programming languages and technologies used throughout the projects or exercises.
 
 ### Front-End
+* HTML5
+* CSS3
 * Javascript
 
 ### Back-End
