@@ -12,3 +12,6 @@ The following is the types of programming languages and technologies used throug
 ### Back-End
 
 ### Database Layer
+
+## Projects
+* [](Library App) [HTML, CSS and Javascript]: Basic web app where you can add and remove books from the library table.
