@@ -1,10 +1,10 @@
 h1 {
-    color: rgb(4, 134, 4);
+    color: #4CAF50;
 }
 
 hr {
     width: 75%;
-    border-top: 5px dotted rgb(255, 46, 46);
+    border-top: 5px dotted rgb(46, 109, 255);
 }
 
 body {
@@ -25,13 +25,20 @@ button {
     color: white;
 }
 
+#del-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10%;
+}
+
 /* Style the form - display items horizontally */
 .form-inline {
     display: inline-block;
     flex-flow: row wrap;
     align-items: center;    
 }
-  
+
 /* Add some margins for each label */
 .form-inline label {
     margin: 5px 10px 5px 0;
@@ -81,14 +88,14 @@ button {
     padding: 8px;
 }
   
-#library tr:nth-child(even){background-color: #f2f2f2;}
+#library tr {background-color: #f2f2f2;}
 
 #library tr:hover {background-color: #ddd;}
 
 #library th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
+    text-align: center;
     background-color: #4CAF50;
     color: white;
 }

@@ -1,7 +1,7 @@
 // Project: Small Library App
 // Description: A library app that you can add/books to the library and view the books in the library.
 // Link: https://www.theodinproject.com/courses/javascript/lessons/library
-let myLibrary = [];
+let myLibrary = []; // Not important?
 
 // Book Constructor
 function Book(title, author, npages) {
@@ -16,10 +16,11 @@ function addBookToLibrary(title, author, npages) {
     myLibrary.push(new Book(title, author, npages));
 
     // display newly added book in library
-    var newRow = document.getElementById('library').insertRow();
+    var newRow = document.getElementById('library').getElementsByTagName('tbody')[0].insertRow();
     var cell1 = newRow.insertCell(0),
         cell2 = newRow.insertCell(1),
-        cell3 = newRow.insertCell(2);
+        cell3 = newRow.insertCell(2),
+        cell4 = newRow.insertCell(3);
     
     // append text node to the cells
     var cell1Text = document.createTextNode(title);
@@ -31,9 +32,21 @@ function addBookToLibrary(title, author, npages) {
     var cell3Text = document.createTextNode(npages.toString());
     cell3.appendChild(cell3Text);
 
+    // add delete book button to last cell
+    var btn = document.createElement("button");
+    var cell4Text = document.createTextNode("Delete");
+    btn.appendChild(cell4Text);
+    btn.setAttribute("id", "del-btn");
+    btn.setAttribute("onclick", "removeBookFromLibrary()");
+    cell4.appendChild(btn);
+
+    // reset form
+    document.getElementById('add-form').reset();
 }
 
 // Remove Book Function
 function removeBookFromLibrary() {
-
+    var td = event.target.parentNode;
+    var tr = td.parentNode;
+    tr.parentNode.removeChild(tr);
 }

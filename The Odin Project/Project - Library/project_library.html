@@ -13,7 +13,7 @@
     <hr>
     
     <!-- Add Book Form -->
-    <form class="form-inline">
+    <form class="form-inline" id="add-form">
         <label for="title">Book title:</label>
         <input type="text" id="title" placeholder="Enter title" name="title">
         <label for="author">Author:</label>
@@ -33,9 +33,21 @@
             <th>Book Title</th>
             <th>Author</th>
             <th>Number of Pages</th>
-            <th>Delete Book</th>
+            <th>Remove Book</th>
         </thead>
         <tbody>
+            <tr>
+                <td>Tales from Shakespeare</td><td>Charles and Mary Lamb</td><td>516</td><td><button id="del-btn" onclick="removeBookFromLibrary()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>1984</td><td>George Orwell</td><td>328</td><td><button id="del-btn" onclick="removeBookFromLibrary()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>A Clockwork Orange</td><td>Anthony Burgess</td><td>192</td><td><button id="del-btn" onclick="removeBookFromLibrary()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>The Great Gatsby</td><td>F. Scott Fitzgerald</td><td>218</td><td><button id="del-btn" onclick="removeBookFromLibrary()">Delete</button></td>
+            </tr>
         </tbody>
     </table>
 </body>
