@@ -15,3 +15,4 @@ The following is the types of programming languages and technologies used throug
 
 ## Projects
 * [Small Library App](https://codepen.io/ywuhub/full/oNgpNWO) [HTML, CSS and Javascript]: Basic web app where you can add and remove books from the library table.
+* [Basic Analog Clock](https://codepen.io/ywuhub/full/bGEvYaE) [HTML, CSS and Javascript]: Simple analog clock to warm up the programming hands.
